@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            
+        }
+        tr:nth-child(even){
+            background-color: rgb(206, 175, 175);
+        }
+        th{
+            background-color: rgb(197, 180, 213);
+        }
+        button{
+            background-color: rgb(157, 235, 159);
+            width: 100px;
+
+        }
+        .pending{
+            background-color: rgb(242, 160, 160);
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <table style="width: 100%;">
+            <thead>
+                <tr>
+                <th>Customer name</th>
+                <th>Number</th>
+                <th>Price</th>
+                <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Pooja</td>
+                <td>9876545678</td>
+                <td>3000 rs</td>
+                <td><button>pay</button> </td>
+                </tr>
+                <tr>
+                    <td>Saniya</td>
+                    <td>9876545678</td>
+                    <td>6000 rs</td>
+                    <td><button class="pending">pending</button> </td>
+                    </tr>
+                    <tr>
+                        <td>Hala</td>
+                        <td>9876545678</td>
+                        <td>5000 rs</td>
+                        
+                        <td><button>pay</button> </td>
+                        </tr>
+                        <tr>
+                            <td>Shahnawaz</td>
+                            <td>9876545678</td>
+                            <td>9000 rs</td>
+                            <td><button class="pending">pending</button> </td>
+                        </tr>
+                        <tr>
+                            <td>Suryuday</td>
+                            <td>9373938878</td>
+                            <td>1000rs</td>
+                            <td><button style="background-color: yellow;"> Processing</button></td>
+                        </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
